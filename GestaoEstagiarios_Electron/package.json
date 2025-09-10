@@ -1,0 +1,23 @@
+{
+  "name": "gestao-estagiarios",
+  "version": "1.0.0",
+  "description": "Sistema de Gestão de Estagiários",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.4.0"
+  },
+  "build": {
+    "appId": "com.gestao.estagiarios",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    }
+  }
+}

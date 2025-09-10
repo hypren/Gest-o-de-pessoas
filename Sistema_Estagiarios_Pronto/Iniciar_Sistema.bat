@@ -1,0 +1,3 @@
+@echo off
+echo Iniciando o Sistema de Gestao de Estagiarios...
+start "" "index.html"

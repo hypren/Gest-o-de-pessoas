@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Gestão de Estagiários</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Gestão de Estagiários</h1>
+        <div class="date-display" id="currentDate"></div>
+    </header>
+
+    <div class="filters">
+        <select id="secretariaFilter">
+            <option value="">Todas as Secretarias</option>
+        </select>
+        <select id="tipoFilter">
+            <option value="">Todos os Tipos</option>
+            <option value="MÉDIO">Nível Médio</option>
+            <option value="SUPERIOR">Nível Superior</option>
+            <option value="PÓS">Pós-Graduado</option>
+        </select>
+        <input type="month" id="dataFilter">
+        <button onclick="aplicarFiltros()">Aplicar Filtros</button>
+    </div>
+
+    <div class="dashboard-grid">
+        <div class="card">
+            <h3>Total de Estagiários</h3>
+            <div class="number" id="totalEstagiarios">0</div>
+            <div class="variation positive">Atualizado</div>
+        </div>
+        <div class="card">
+            <h3>Taxa de Rotatividade</h3>
+            <div class="number" id="taxaRotatividade">0%</div>
+            <div class="variation negative">Mensal</div>
+        </div>
+        <div class="card">
+            <h3>Custo Per Capita</h3>
+            <div class="number" id="custoPerCapita">R$ 0</div>
+            <div class="variation positive">Média</div>
+        </div>
+        <div class="card">
+            <h3>Absenteísmo</h3>
+            <div class="number" id="absenteismo">0%</div>
+            <div class="variation negative">Mensal</div>
+        </div>
+    </div>
+
+    <div class="charts-container">
+        <div class="chart-card">
+            <h3>Distribuição por Secretaria</h3>
+            <canvas id="distribuicaoSecretaria"></canvas>
+        </div>
+        <div class="chart-card">
+            <h3>Distribuição por Tipo</h3>
+            <canvas id="distribuicaoTipo"></canvas>
+        </div>
+        <div class="chart-card">
+            <h3>Evolução de Contratações</h3>
+            <canvas id="evolucaoContratacoes"></canvas>
+        </div>
+    </div>
+
+    <div class="detailed-data">
+        <h3>Dados Detalhados</h3>
+        <table id="tabelaEstagiarios">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Matrícula</th>
+                    <th>Cargo</th>
+                    <th>Secretaria</th>
+                    <th>Admissão</th>
+                    <th>Status</th>
+                    <th>Salário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados serão preenchidos via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/data_new.js"></script>
+    <script src="js/script_new.js"></script>
+</body>
+</html>

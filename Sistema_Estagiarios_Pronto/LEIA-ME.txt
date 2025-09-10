@@ -1,0 +1,32 @@
+Instruções para Instalação e Uso do Sistema de Gestão de Estagiários
+
+1. INSTALAÇÃO
+-------------
+- Extraia todos os arquivos do pacote para uma pasta de sua preferência no computador
+- Mantenha todos os arquivos juntos na mesma pasta
+
+2. COMO INICIAR O SISTEMA
+------------------------
+- Dê duplo clique no arquivo "Iniciar_Sistema.bat"
+- O sistema abrirá automaticamente em seu navegador padrão
+
+3. FUNCIONALIDADES
+-----------------
+- Visualização do dashboard com informações dos estagiários
+- Gráficos e estatísticas
+- Exportação de dados para Excel/CSV
+- Importação de dados
+- Gerenciamento completo das informações
+
+4. OBSERVAÇÕES IMPORTANTES
+-------------------------
+- Não delete ou mova arquivos da pasta do sistema
+- Mantenha uma cópia de backup dos seus dados exportados
+- Para suporte, entre em contato com o departamento de TI
+
+5. REQUISITOS MÍNIMOS
+--------------------
+- Windows 7 ou superior
+- Navegador web atual (Chrome, Firefox, Edge)
+- 2GB de RAM
+- 100MB de espaço em disco
